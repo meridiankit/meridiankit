@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">What MeridianKit builds</title>
+  <desc id="desc">Data tools, agent tools, and software utilities.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#112634"/>
+      <stop offset="1" stop-color="#0B1922"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3FB0CE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7FD8EE"/>
+      <stop offset="1" stop-color="#3FB0CE" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="k1"><rect x="10" y="10" width="373" height="280" rx="18"/></clipPath>
+    <clipPath id="k2"><rect x="413" y="10" width="374" height="280" rx="18"/></clipPath>
+    <clipPath id="k3"><rect x="817" y="10" width="373" height="280" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .rise { opacity: 0; animation: rise 0.8s ease-out forwards; }
+    .c1 { animation-delay: 0.1s; }
+    .c2 { animation-delay: 0.3s; }
+    .c3 { animation-delay: 0.5s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .scan { animation: scan 4s ease-in-out infinite; }
+    @keyframes scan { 0% { transform: translateX(-160px); } 100% { transform: translateX(380px); } }
+    .blink { animation: blink 1.6s ease-in-out infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    .title { font-size: 24px; font-weight: 700; fill: #F2F8FB; }
+    .body { font-size: 15.5px; fill: #9FBAC7; }
+    .tag { font-size: 13px; fill: #6FC6DC; letter-spacing: 1.5px; }
+  </style>
+
+  <g class="sans">
+    <g class="rise c1">
+      <rect x="10" y="10" width="373" height="280" rx="18" fill="url(#card)" stroke="#1F4255"/>
+      <g clip-path="url(#k1)"><rect class="scan" x="10" y="10" width="160" height="2" fill="url(#accent)"/></g>
+      <rect x="40" y="42" width="52" height="52" rx="13" fill="#123444" stroke="#2A6B82"/>
+      <g stroke="#7FD8EE" stroke-width="2" fill="none">
+        <rect x="53" y="55" width="26" height="26" rx="3"/>
+        <line x1="53" y1="64" x2="79" y2="64"/>
+        <line x1="53" y1="72" x2="79" y2="72"/>
+        <line x1="63" y1="64" x2="63" y2="81"/>
+      </g>
+      <text x="40" y="136" class="title">Data tools</text>
+      <text x="40" y="168" class="body">Read a public source and return</text>
+      <text x="40" y="190" class="body">clean rows, with the source on</text>
+      <text x="40" y="212" class="body">every one.</text>
+      <circle cx="46" cy="256" r="4" fill="#3FB0CE" class="blink"/>
+      <text x="58" y="261" class="tag mono">SOURCE + APIFY ACTOR</text>
+    </g>
+
+    <g class="rise c2">
+      <rect x="413" y="10" width="374" height="280" rx="18" fill="url(#card)" stroke="#1F4255"/>
+      <g clip-path="url(#k2)"><rect class="scan" x="413" y="10" width="160" height="2" fill="url(#accent)" style="animation-delay:-1.3s"/></g>
+      <rect x="443" y="42" width="52" height="52" rx="13" fill="#123444" stroke="#2A6B82"/>
+      <g stroke="#7FD8EE" stroke-width="2" fill="none">
+        <circle cx="469" cy="58" r="5"/>
+        <circle cx="457" cy="80" r="5"/>
+        <circle cx="481" cy="80" r="5"/>
+        <line x1="466" y1="62" x2="459" y2="75"/>
+        <line x1="472" y1="62" x2="479" y2="75"/>
+        <line x1="462" y1="80" x2="476" y2="80"/>
+      </g>
+      <text x="443" y="136" class="title">Agent tools</text>
+      <text x="443" y="168" class="body">MCP servers and skills that give</text>
+      <text x="443" y="190" class="body">an agent one job, and a result</text>
+      <text x="443" y="212" class="body">it can check.</text>
+      <circle cx="449" cy="256" r="4" fill="#3FB0CE" class="blink" style="animation-delay:-0.5s"/>
+      <text x="461" y="261" class="tag mono">MCP SERVER &#183; SKILL</text>
+    </g>
+
+    <g class="rise c3">
+      <rect x="817" y="10" width="373" height="280" rx="18" fill="url(#card)" stroke="#1F4255"/>
+      <g clip-path="url(#k3)"><rect class="scan" x="817" y="10" width="160" height="2" fill="url(#accent)" style="animation-delay:-2.6s"/></g>
+      <rect x="847" y="42" width="52" height="52" rx="13" fill="#123444" stroke="#2A6B82"/>
+      <g stroke="#7FD8EE" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="858,60 866,68 858,76"/>
+        <line x1="871" y1="77" x2="886" y2="77"/>
+      </g>
+      <text x="847" y="136" class="title">Software utilities</text>
+      <text x="847" y="168" class="body">Small command-line tools and</text>
+      <text x="847" y="190" class="body">libraries for one specific</text>
+      <text x="847" y="212" class="body">workflow.</text>
+      <circle cx="853" cy="256" r="4" fill="#3FB0CE" class="blink" style="animation-delay:-1s"/>
+      <text x="865" y="261" class="tag mono">CLI &#183; LIBRARY</text>
+    </g>
+  </g>
+</svg>

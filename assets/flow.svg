@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">How a MeridianKit tool moves</title>
+  <desc id="desc">A public source is read by a tool, which returns clean rows. The rows go to a hosted Apify run or to an agent through MCP.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08121A"/>
+      <stop offset="1" stop-color="#0F2230"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1A3140"/>
+    </pattern>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .wire { fill: none; stroke: #2A6B82; stroke-width: 2; }
+    .flow { fill: none; stroke: #7FD8EE; stroke-width: 2; stroke-dasharray: 6 12; animation: flow 1.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -18; } }
+    .node { fill: #0F2A38; stroke: #24536A; stroke-width: 1.5; }
+    .core { fill: #123A4C; stroke: #3FB0CE; stroke-width: 2; }
+    .label { font-size: 17px; font-weight: 600; fill: #EAF4F8; }
+    .sub { font-size: 12.5px; fill: #7FA9BA; letter-spacing: 1px; }
+    .ring { fill: none; stroke: #3FB0CE; stroke-width: 1.5; animation: ring 2.8s ease-out infinite; transform-origin: 600px 130px; }
+    @keyframes ring { 0% { opacity: 0.7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.35); } }
+  </style>
+
+  <rect width="1200" height="260" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="260" rx="22" fill="url(#dots)"/>
+
+  <path class="wire" d="M290,130 L470,130"/>
+  <path class="flow" d="M290,130 L470,130"/>
+  <path class="wire" d="M730,130 C800,130 820,70 900,70"/>
+  <path class="flow" d="M730,130 C800,130 820,70 900,70"/>
+  <path class="wire" d="M730,130 C800,130 820,190 900,190"/>
+  <path class="flow" d="M730,130 C800,130 820,190 900,190"/>
+
+  <circle r="4.5" fill="#BFF0FB">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M290,130 L470,130"/>
+  </circle>
+  <circle r="4.5" fill="#BFF0FB">
+    <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M730,130 C800,130 820,70 900,70"/>
+  </circle>
+  <circle r="4.5" fill="#BFF0FB">
+    <animateMotion dur="2.4s" begin="1.8s" repeatCount="indefinite" path="M730,130 C800,130 820,190 900,190"/>
+  </circle>
+
+  <g class="sans">
+    <rect class="node" x="60" y="92" width="230" height="76" rx="16"/>
+    <text x="175" y="126" text-anchor="middle" class="label">Public source</text>
+    <text x="175" y="148" text-anchor="middle" class="sub mono">OPEN DATA &#183; API</text>
+
+    <rect class="ring" x="470" y="82" width="260" height="96" rx="20"/>
+    <rect class="core" x="470" y="82" width="260" height="96" rx="20"/>
+    <text x="600" y="124" text-anchor="middle" class="label" font-size="19">MeridianKit tool</text>
+    <text x="600" y="148" text-anchor="middle" class="sub mono">CLEAN ROWS + SOURCE</text>
+
+    <rect class="node" x="900" y="38" width="240" height="64" rx="16"/>
+    <text x="1020" y="66" text-anchor="middle" class="label">Hosted run</text>
+    <text x="1020" y="86" text-anchor="middle" class="sub mono">APIFY ACTOR</text>
+
+    <rect class="node" x="900" y="158" width="240" height="64" rx="16"/>
+    <text x="1020" y="186" text-anchor="middle" class="label">Your agent</text>
+    <text x="1020" y="206" text-anchor="middle" class="sub mono">MCP &#183; SKILL</text>
+  </g>
+</svg>

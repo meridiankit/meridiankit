@@ -1,60 +1,98 @@
-<div align="center">
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="MeridianKit. Tools for data, agents, and software workflows." />
+</p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1B3A4B&height=190&section=header&text=MeridianKit&fontSize=46&fontColor=ffffff&fontAlignY=40&desc=Data%20%C2%B7%20agents%20%C2%B7%20software&descAlignY=64&descSize=18&descFontColor=D6E2EA" width="100%" alt="MeridianKit" />
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0F2A38?style=for-the-badge&logo=python&logoColor=7FD8EE" alt="Python" />
+  <img src="https://img.shields.io/badge/MCP-0F2A38?style=for-the-badge&logo=modelcontextprotocol&logoColor=7FD8EE" alt="MCP" />
+  <img src="https://img.shields.io/badge/Apify_Actors-0F2A38?style=for-the-badge" alt="Apify Actors" />
+  <img src="https://img.shields.io/badge/Docker-0F2A38?style=for-the-badge&logo=docker&logoColor=7FD8EE" alt="Docker" />
+  <img src="https://img.shields.io/badge/Open_source-0F2A38?style=for-the-badge&logo=github&logoColor=7FD8EE" alt="Open source" />
+</p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Source+Sans+3&weight=500&size=22&duration=2800&pause=900&color=1B3A4B&center=true&vCenter=true&width=720&lines=Tools+for+data%2C+agents%2C+and+software;Open+source+here.+A+hosted+run+when+it+earns+one.;One+tool.+One+job.+A+sample+of+the+output." alt="Tools for data, agents, and software" />
+<h3 align="center">Small tools that do one job well, with the source in the open.</h3>
+
+<p align="center">
+  A MeridianKit tool reads a public source, gives an agent one capability, or runs a workflow on a schedule.<br/>
+  The code lives here. When a tool is worth running on a schedule, its README links to the hosted version.
+</p>
 
 <br/>
 
-<img src="https://img.shields.io/badge/Python-1B3A4B?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/MCP-1B3A4B?style=flat-square" alt="MCP" />
-<img src="https://img.shields.io/badge/Apify-1B3A4B?style=flat-square" alt="Apify" />
-<img src="https://img.shields.io/badge/Docker-1B3A4B?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+## What we build
 
-<br/><br/>
+<p align="center">
+  <img src="assets/build.svg" width="100%" alt="Data tools, agent tools, and software utilities." />
+</p>
 
-<img src="https://komarev.com/ghpvc/?username=meridiankit&style=flat-square&color=1B3A4B&label=visitors" alt="Profile visitors" />
+## How a tool moves
 
-</div>
+<p align="center">
+  <img src="assets/flow.svg" width="100%" alt="A public source is read by a MeridianKit tool. The clean rows go to a hosted Apify run or to your agent through MCP." />
+</p>
 
-<br/>
+## The shape every tool returns
 
-MeridianKit builds small tools that do one job. A tool pulls a public dataset, gives an agent a single capability, or runs a workflow on a schedule.
+<p align="center">
+  <img src="assets/output.svg" width="100%" alt="Example output: each row carries its source URL and the time it was read." />
+</p>
 
-The source lives in this account. When a hosted run exists, that tool's README links to it.
+<p align="center"><sub>Illustration of the output format. Real samples live in each tool's <code>examples/</code> folder.</sub></p>
 
 ## Start here
 
-| I want to… | Where it lives |
-| --- | --- |
-| Pull a public dataset | A repository here, and an Apify Actor when it should run on a schedule |
-| Give an agent one job | An MCP server or a skill in its own repository |
-| See what a tool returns | The sample in that repository's README |
-
-Tools are added one repository at a time. Nothing is listed here until it actually runs.
-
-## How a tool is shipped
-
-```mermaid
-flowchart LR
-  source[Source in this account]
-  sample[Sample output in the README]
-  hosted[Hosted run, when it earns one]
-  source --> sample --> hosted
-```
-
-| Piece | What you get |
-| --- | --- |
-| `README.md` | What it does, one sample, and the hosted link when there is one |
-| `src/` | The tool |
-| `examples/` | One input and the output it produces |
-
-## Stack
-
-Python for the tools. MCP when an agent needs to call one. Apify when the job should run on a schedule. Docker when the tool needs a fixed environment.
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1B3A4B&height=110&section=footer" width="100%" alt="" />
+| I want to… | Where it lives |
+| :--- | :--- |
+| Pull a public dataset | A repository here, and an Apify Actor when it should run on a schedule |
+| Give an agent one job | An MCP server or a skill in its own repository |
+| See what a tool returns | The `examples/` folder in that repository |
+| Run it myself | The source, with the setup steps in its README |
 
 </div>
+
+## How we work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Public data only**<br/>
+Open data, official APIs, and pages that allow it. Nothing behind a login, and nothing a site's terms forbid.
+
+</td>
+<td width="50%" valign="top">
+
+**One tool, one job**<br/>
+Each repository does a single thing, so it stays small enough to read and easy to trust.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**A real sample first**<br/>
+Every README shows actual output before it asks you to run anything.
+
+</td>
+<td width="50%" valign="top">
+
+**Source stays open**<br/>
+The hosted run is a convenience. The code to run it yourself stays in this account.
+
+</td>
+</tr>
+</table>
+
+## Status
+
+The first tools are being built now. Each one is added here once it runs from start to finish.
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=meridiankit&style=for-the-badge&color=0F2A38&labelColor=08121A&label=visitors" alt="Profile visitors" />
+</p>
+
+<p align="center">
+  <img src="assets/footer.svg" width="100%" alt="" />
+</p>

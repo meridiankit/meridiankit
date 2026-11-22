@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">MeridianKit</title>
+  <desc id="desc">Open-source tool studio. Tools for data, agents, and software workflows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08121A"/>
+      <stop offset="1" stop-color="#0F2230"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.48" r="0.42">
+      <stop offset="0" stop-color="#2FA4C2" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#2FA4C2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphere" cx="0.38" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#173A4C"/>
+      <stop offset="1" stop-color="#0A1822"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1E3746"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1200" height="400" rx="22"/>
+    </clipPath>
+    <clipPath id="globe">
+      <circle cx="930" cy="200" r="148"/>
+    </clipPath>
+  </defs>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .fade { opacity: 0; animation: fade 0.9s ease-out forwards; }
+    .d1 { animation-delay: 0.15s; }
+    .d2 { animation-delay: 0.45s; }
+    .d3 { animation-delay: 0.75s; }
+    .d4 { animation-delay: 1.05s; }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .meridian { fill: none; stroke: #3FB0CE; stroke-width: 1.3; opacity: 0.55; }
+    .parallel { fill: none; stroke: #2B6378; stroke-width: 1; opacity: 0.7; }
+    .orbit { fill: none; stroke: #3FB0CE; stroke-width: 1; stroke-dasharray: 3 7; opacity: 0.45; }
+    .pulse { animation: pulse 2.6s ease-in-out infinite; transform-origin: 112px 132px; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="400" fill="url(#bg)"/>
+    <rect width="1200" height="400" fill="url(#dots)"/>
+    <rect width="1200" height="400" fill="url(#glow)"/>
+
+    <g class="sans">
+      <g class="fade d1">
+        <circle class="pulse" cx="112" cy="132" r="5" fill="#3FB0CE"/>
+        <text x="126" y="137" class="mono" font-size="14" letter-spacing="3" fill="#6FC6DC">OPEN-SOURCE TOOL STUDIO</text>
+      </g>
+      <text x="100" y="208" font-size="70" font-weight="700" fill="#F2F8FB" letter-spacing="-1.5" class="fade d2">MeridianKit</text>
+      <text x="102" y="252" font-size="23" fill="#A8C3D0" class="fade d3">Tools for data, agents, and software workflows.</text>
+
+      <g class="fade d4" font-size="15" fill="#CFE6EF">
+        <rect x="100" y="282" width="112" height="34" rx="17" fill="#0F2A38" stroke="#24536A"/>
+        <text x="156" y="304" text-anchor="middle">Data tools</text>
+        <rect x="224" y="282" width="128" height="34" rx="17" fill="#0F2A38" stroke="#24536A"/>
+        <text x="288" y="304" text-anchor="middle">MCP servers</text>
+        <rect x="364" y="282" width="122" height="34" rx="17" fill="#0F2A38" stroke="#24536A"/>
+        <text x="425" y="304" text-anchor="middle">Agent skills</text>
+        <rect x="498" y="282" width="122" height="34" rx="17" fill="#0F2A38" stroke="#24536A"/>
+        <text x="559" y="304" text-anchor="middle">Automation</text>
+      </g>
+    </g>
+
+    <circle cx="930" cy="200" r="148" fill="url(#sphere)" stroke="#2A6B82" stroke-width="1.5"/>
+    <g clip-path="url(#globe)">
+      <ellipse class="parallel" cx="930" cy="200" rx="148" ry="16"/>
+      <ellipse class="parallel" cx="930" cy="140" rx="136" ry="14"/>
+      <ellipse class="parallel" cx="930" cy="260" rx="136" ry="14"/>
+      <ellipse class="parallel" cx="930" cy="88" rx="100" ry="10"/>
+      <ellipse class="parallel" cx="930" cy="312" rx="100" ry="10"/>
+
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="148">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="0s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="111">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="-2s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="74">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="-4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="37">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="-6s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="74">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="-8s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse class="meridian" cx="930" cy="200" ry="148" rx="111">
+        <animate attributeName="rx" values="148;0;148" dur="12s" begin="-10s" repeatCount="indefinite"/>
+      </ellipse>
+      <line x1="930" y1="52" x2="930" y2="348" stroke="#5CC4DF" stroke-width="1.6" opacity="0.8"/>
+    </g>
+
+    <g transform="rotate(-18 930 200)">
+      <ellipse id="orbitPath" class="orbit" cx="930" cy="200" rx="215" ry="62"/>
+      <circle r="5.5" fill="#7FD8EE">
+        <animateMotion dur="9s" repeatCount="indefinite" path="M715,200 a215,62 0 1,0 430,0 a215,62 0 1,0 -430,0"/>
+      </circle>
+      <circle r="3.5" fill="#3FB0CE" opacity="0.8">
+        <animateMotion dur="9s" begin="-4.5s" repeatCount="indefinite" path="M715,200 a215,62 0 1,0 430,0 a215,62 0 1,0 -430,0"/>
+      </circle>
+    </g>
+
+    <circle cx="930" cy="52" r="4" fill="#7FD8EE"/>
+    <circle cx="930" cy="348" r="4" fill="#7FD8EE"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">The shape every MeridianKit tool returns</title>
+  <desc id="desc">Illustration. Each row carries its data, the source it came from, and when it was read.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 17px; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .line { opacity: 0; animation: show 0.01s linear forwards; }
+    @keyframes show { to { opacity: 1; } }
+    .l1 { animation-delay: 0.3s; } .l2 { animation-delay: 0.9s; } .l3 { animation-delay: 1.3s; }
+    .l4 { animation-delay: 1.6s; } .l5 { animation-delay: 1.9s; } .l6 { animation-delay: 2.2s; }
+    .l7 { animation-delay: 2.5s; } .l8 { animation-delay: 2.8s; } .l9 { animation-delay: 3.1s; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .k { fill: #7FD8EE; } .s { fill: #C7E9A6; } .p { fill: #8FA9B6; } .c { fill: #5E7F8F; } .n { fill: #F2C27B; }
+  </style>
+
+  <rect width="1200" height="330" rx="18" fill="#0A1620" stroke="#1F4255"/>
+  <rect width="1200" height="46" rx="18" fill="#0F2230"/>
+  <rect y="30" width="1200" height="16" fill="#0F2230"/>
+  <line x1="0" y1="46" x2="1200" y2="46" stroke="#1F4255"/>
+  <circle cx="30" cy="23" r="6.5" fill="#E5675E"/>
+  <circle cx="52" cy="23" r="6.5" fill="#E8B54F"/>
+  <circle cx="74" cy="23" r="6.5" fill="#5DBE6E"/>
+  <text x="600" y="29" text-anchor="middle" class="sans" font-size="14" fill="#7FA9BA">examples/output.json</text>
+
+  <g class="mono">
+    <text x="40" y="88" class="line l1"><tspan class="c">// every row names where it came from and when it was read</tspan></text>
+    <text x="40" y="122" class="line l2"><tspan class="p">{</tspan></text>
+    <text x="40" y="150" class="line l3"><tspan dx="28" class="k">"source"</tspan><tspan class="p">: </tspan><tspan class="s">"https://data.example.org/registry"</tspan><tspan class="p">,</tspan></text>
+    <text x="40" y="178" class="line l4"><tspan dx="28" class="k">"fetched_at"</tspan><tspan class="p">: </tspan><tspan class="s">"2026-11-22T14:00:00Z"</tspan><tspan class="p">,</tspan></text>
+    <text x="40" y="206" class="line l5"><tspan dx="28" class="k">"row"</tspan><tspan class="p">: {</tspan></text>
+    <text x="40" y="234" class="line l6"><tspan dx="56" class="k">"name"</tspan><tspan class="p">: </tspan><tspan class="s">"Example record"</tspan><tspan class="p">,  </tspan><tspan class="k">"count"</tspan><tspan class="p">: </tspan><tspan class="n">42</tspan></text>
+    <text x="40" y="262" class="line l7"><tspan dx="28" class="p">}</tspan></text>
+    <text x="40" y="290" class="line l8"><tspan class="p">}</tspan></text>
+    <rect x="58" y="274" width="10" height="20" fill="#7FD8EE" class="line l9 cursor"/>
+  </g>
+
+  <g class="sans">
+    <rect x="860" y="112" width="290" height="150" rx="14" fill="#0F2230" stroke="#1F4255"/>
+    <text x="884" y="146" font-size="13" fill="#6FC6DC" letter-spacing="2" class="mono">THE PROMISE</text>
+    <text x="884" y="178" font-size="16" fill="#DCEBF1">Source on every row.</text>
+    <text x="884" y="206" font-size="16" fill="#DCEBF1">Time it was read.</text>
+    <text x="884" y="234" font-size="16" fill="#DCEBF1">Same shape every run.</text>
+  </g>
+</svg>
